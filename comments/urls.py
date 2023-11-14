@@ -2,5 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.home, name='comments_home')
+    path("", views.CommentList.as_view(), name='comments_home')
 ]
